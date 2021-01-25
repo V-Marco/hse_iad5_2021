@@ -1,0 +1,263 @@
+\documentclass[10pt, a4paper]{extarticle}
+
+%% Язык
+\usepackage{cmap} % Поиск в PDF
+\usepackage{mathtext} % Кириллица в формулах
+\usepackage[T2A]{fontenc} % Кодировка
+\usepackage[utf8]{inputenc} % Кодировка
+\usepackage[english,russian]{babel} % Локализация, переносы
+
+%% Шрифты
+
+% Serif
+%\usepackage{euscript} % Шрифт Евклид
+%\usepackage{mathrsfs} % Шрифт для математики
+\usepackage{libertinus}
+
+% Sans-serif
+%\renewcommand{\rmdefault}{cmss}
+\renewcommand{\ttdefault}{cmss}
+%\usepackage{sfmath}
+
+% Настройки для xelatex
+%\usepackage{polyglossia} % Для выбора языка в xelatex
+%\setmainlanguage{russian}
+%\setotherlanguages{english}
+% Ligatures=TeX is on by default
+% https://tex.stackexchange.com/questions/323542/
+%\setmainfont[Ligatures=TeX]{Cantarell}
+%\newfontfamily{\cyrillicfonttt}{Times New Roman}
+%\newfontfamily\cyrillicfont{Cantarell}[Script=Cyrillic]
+%\setsansfont[Ligatures=TeX]{Cantarell}
+%\newfontfamily\cyrillicfontsf{Cantarell}[Script=Cyrillic]
+%\setmonofont{Courier New}
+%\newfontfamily\cyrillicfonttt{Courier New}[Script=Cyrillic]
+
+%% Математика
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+\usepackage{icomma}
+
+% Операторы
+\DeclareMathOperator*\plim{plim}
+\DeclareMathOperator{\sgn}{sign}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\amn}{arg\,min}
+\DeclareMathOperator*{\amx}{arg\,max}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\pCorr}{pCorr}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\let\P\relax
+\DeclareMathOperator{\P}{\mathbb{P}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Распределения
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cBinom}{\mathcal{Binom}}
+\newcommand{\cPois}{\mathcal{Pois}}
+\newcommand{\cBeta}{\mathcal{Beta}}
+\newcommand{\cGamma}{\mathcal{Gamma}}
+
+% Множества
+\def \R{\mathbb{R}}
+\def \N{\mathbb{N}}
+\def \Z{\mathbb{Z}}
+
+% Другое
+\newcommand{\dx}[1]{\,\mathrm{d}#1} % Для интеграла: маленький отступ и прямая d
+\newcommand{\ind}[1]{\mathbbm{1}_{\{#1\}}} % Индикатор события
+\newcommand{\iid}{\mathrel{\stackrel{\rm i.\,i.\,d.}\sim}}
+\newcommand{\const}{\mathrm{const}}
+
+%% Изображения
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{physics}
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+\usepackage{tikz}
+
+%% Таблицы
+\usepackage{array, tabularx, tabulary, booktabs}
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+%% Cписки
+\usepackage{multicol}
+\usepackage{enumitem}
+
+%% Гиперссылки
+\usepackage{xcolor}
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{8b00ff}
+\hypersetup{colorlinks = true,
+			linkcolor = linkcolor,
+			urlcolor = linkcolor,
+			citecolor = linkcolor}
+
+%% Выравнивание
+\setlength{\parskip}{0.5em} % Расстояние между абзацами
+\usepackage{geometry} % Поля
+\geometry{
+	a4paper,
+	left=20mm,
+	top=20mm,
+	right=20mm}
+\setlength{\parindent}{0cm} % Отступ (красная строка)
+\linespread{1.0} % Интерлиньяж
+\usepackage[many]{tcolorbox}  
+
+%% Оформление
+
+\newtcolorbox{rulesbox}[1]{%
+	tikznode boxed title,
+	enhanced,
+	arc=0mm,
+	interior style={white},
+	attach boxed title to top center= {yshift=-\tcboxedtitleheight/2},
+	fonttitle=\bfseries,
+	colbacktitle=white,coltitle=black,
+	boxed title style={size=normal,colframe=white,boxrule=0pt},
+	title={#1}}
+
+% Красивый серый фон
+\usepackage{framed} 
+\definecolor{shadecolor}{gray}{0.9}
+
+% Код
+\newcommand{\code}[1]{\colorbox{lightgray}{{\tt #1}}}
+
+% Колонтитулы
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{}
+\fancyhead[R]{\thepage}
+
+% Разделы и подразделы
+\usepackage[sf, sl, outermarks]{titlesec}
+\titleformat{\section}{\Large\bfseries\sffamily}{\thesection}{0.5em}{}
+\titleformat{\subsection}{\large\sffamily}{\thesubsection}{0.5em}{}
+
+% Содержание
+%\usepackage{tocloft}
+%\renewcommand{\cftsecfont}{\hspace{4.5em}\normalfont}
+%\renewcommand{\cftsubsecfont}{\hspace{5em}\normalfont}
+%\renewcommand{\cftsecpagefont}{\normalfont\hfill}
+%\renewcommand{\cfttoctitlefont}{\large\normalfont\hfill}
+%\renewcommand{\cftaftertoctitle}{\hfill}
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%\renewcommand{\cftsecafterpnum}{\hspace*{5.5em}\hfill}
+%\renewcommand{\cftsubsecafterpnum}{\hspace*{5.5em}\hfill}
+%\renewcommand{\cftsecaftersnum}{.}
+%\renewcommand{\cftsubsecaftersnum}{.}
+
+%% Комментарии
+\usepackage{comment}
+
+%% To-do
+\usepackage{todonotes}
+
+%% Литература
+\usepackage[backend = biber,
+			bibencoding = utf8, 
+			sorting = nty, 
+			maxcitenames = 4,
+			style = numeric-verb]{biblatex}
+\addbibresource{lit.bib}
+\usepackage{csquotes}
+
+%% Заголовок
+\title{{\normalsize Интеллектуальный анализ данных 2021 – Группа ИАД-5} \\ \vspace{0.5em} Консультация по Git и GitHub}
+\author{\rule{15cm}{0.4pt}}
+
+
+
+
+\begin{document}
+	
+	\maketitle
+
+	{\Large \textbf{Перед консультацией.}}
+	
+	\begin{enumerate}
+		\item Установите Git на ваш компьютер.
+		\begin{description}
+			
+			\item[Win] установите Git for Windows Setup \href{http://git-scm.com/download/win}{с официального сайта}. В окне «Adjusting the name of the initial branch in the new repositories» выберите «Let Git decide». В окне «Choose the default behavior of git pull» выберите «Default». В окне «Choose a credential helper» выберите «Git Credential Manager Core». В окне «Configuring experimental options» не выбирайте ничего. Проверьте, что при запуске программы Git Bash открывается тёмное окно с разноцветными надписями. 
+			
+			\item[Mac] откройте приложение «Терминал». Введите любую команду, связанную с Git, например, \code{git status}. Откроется системное окно, в котором будет предложено установить дополнительные инструменты разработчика XCode. Согласитесь и установите их. 
+			
+			\textbf{NB!}: сам XCode устанавливать не требуется, достаточно установить только дополнительные инструменты разработчика, как описано выше. 
+		\end{description}
+	
+		\item Зарегистрируйтесь на \href{https://github.com}{GitHub}.
+	\end{enumerate}
+	
+	\vspace{1em}
+	
+	{\Large \textbf{Создание и управление репозиторием.}}
+	
+	\begin{enumerate}
+		\item Команда \code{git init} позволяет создавать новые репозитории. Создайте папку {\tt git\_cons} в домашней папке и локальный репозиторий в ней.
+		
+		\textbf{NB!}: для перехода между папками в терминале можно использовать команду \code{cd}.
+		
+		\textbf{NB!}: кнопка {\tt TAB} позволяет использовать автодополнение.
+		
+		\item Создайте в репозитории текстовый файл {\tt test.txt} с двумя (любыми) строками.
+		\item Команды:
+			\begin{itemize}
+				\item \code{git add <filename>} добавляет изменения в staging area.
+				\item \code{git commit -m '<message>'} создаёт новый commit в репозитории. 
+			\end{itemize}
+		Сделайте commit в репозиторий. Введите какое-нибудь осознанное сообщение.
+		
+		\textbf{NB!}: {\tt .} означает «все файлы».
+		
+		\item Команда \code{git status} позволяет узнать, что происходит в репозитории. Используйте эту команду и прокомментируйте выдачу. Внесите какие-нибудь изменения в текстовый файл. Что происходит в репозитории теперь? Сделайте commit с вашими изменениями.
+		\item Команда \code{git help <command>} позволяет получить справку о команде. С помощью неё выясните, как создать новую ветку командой \code{git checkout}.
+		\item Выясните, в какой ветке вы находитесь при помощи команды \code{git branch}. Создайте новую ветку {\tt git\_test} при помощи команды из предыдущего пункта.
+		\item Выясните, в какой ветке вы находитесь. Внесите в текстовый файл какие-нибудь изменения и сделайте commit в ветке {\tt git\_test}. Убедитесь, что файл в основной ветке не был изменён. 
+	\end{enumerate}
+	
+	\vspace{1em}
+	
+	{\Large \textbf{Взаимодействие с GitHub.}}
+	
+	\begin{enumerate}
+		\item Создайте новый удалённый публичный репозиторий на GitHub и назовите его {\tt git\_cons}. При помощи команды:
+		
+		\code{git remote add origin <path>},
+	
+		добавьте удалённый репозиторий для вашего локального репозитория.
+		
+		\textbf{NB!}: название удалённого репозитория можно посмотреть при помощи команды \code{git remote}. В данном случае мы назвали его {\tt origin}.
+		
+		\item Перейдите на основную ветку (далее будем работать только с ней). Отправьте (push) локальные изменения на удалённый репозиторий при помощи команды \code{git push origin <main branch>}. Проверьте, что изменения появились на GitHub. Отправьте локальные изменения ветки {\tt git\_test}.
+		\item Измените текстовый файл вручную на GitHub. Синхронизируйте изменения на локальный компьютер при помощи команды \code{git pull origin <branch>}. Проверьте, что локальный файл изменился.
+		\item Теперь измените файл и на компьютере, и на GitHub так, чтобы изменения были противоречивыми. Сделайте commit в обоих местах. Используйте команду \code{git pull origin <branch>}. Устраните возникший конфликт. 
+		\item Клонируйте \href{https://github.com/V-Marco/hse_iad5_2021}{репозиторий нашей группы} на локальный компьютер при помощи команды \code{git clone <remote>}.
+		\item Сделайте fork репозитория нашей группы и клонируйте его на компьютер. Локально добавьте в него какой-нибудь файл и сделайте commit и push. 
+		\item Создайте pull request для внесения ваших изменений в репозиторий нашей группы. 
+	\end{enumerate}
+
+	\vspace{1em}
+	
+	{\Large \textbf{Полезные ссылки.}}
+	
+	\begin{enumerate}
+		\item \href{https://git-scm.com/docs}{Документация Git.}
+		\item \href{https://dzone.com/articles/top-20-git-commands-with-examples}{Команды с описанием.}
+		\item \href{https://desktop.github.com}{GitHub Desktop.}
+	\end{enumerate}
+	
+\end{document}
