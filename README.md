@@ -3,6 +3,9 @@
 
 - Полезные ссылки.
   - [Anaconda](https://www.anaconda.com/products/individual)
+  
+- Консультация по Git.
+  - [Задание](https://github.com/V-Marco/hse_iad5_2021/blob/main/misc/git_cons/git_cons.pdf)
 
 - Семинар 1: Введение в Pandas.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar1/sem1_pandas.ipynb)
