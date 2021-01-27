@@ -17,4 +17,4 @@
 - Семинар 2: Введение в NumPy.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar2/sem02_numpy.ipynb)
   - [Видео](https://youtu.be/gOkitx_tnOg)
-  - [Объяснение np.random.seed](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do)
+  - [Объяснение `np.random.seed()`](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do)
