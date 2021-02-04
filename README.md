@@ -18,3 +18,7 @@
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar2/sem02_numpy.ipynb)
   - [Видео](https://youtu.be/gOkitx_tnOg)
   - [Объяснение `np.random.seed()`](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do)
+
+- Семинар 3: Визуализация и предварительный анализ данных. 
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar3/sem03_EDA.ipynb)
+  - [Видео](https://youtu.be/OhS72gMNszw)
