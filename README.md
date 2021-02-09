@@ -3,6 +3,7 @@
 
 - Полезные ссылки.
   - [Anaconda](https://www.anaconda.com/products/individual)
+  - [Таблица с оценками](https://docs.google.com/spreadsheets/d/1bveVtysWEZogdRssbqiNPovguRq3ejP7fMEMVHcNzaM/edit?usp=sharing)
   
 - Консультация по Git.
   - [Задание](https://github.com/V-Marco/hse_iad5_2021/blob/main/misc/git_cons/git_cons.pdf)
