@@ -3,6 +3,7 @@
 
 - Полезные ссылки.
   - [Anaconda](https://www.anaconda.com/products/individual)
+  - [Таблица с оценками](https://docs.google.com/spreadsheets/d/1bveVtysWEZogdRssbqiNPovguRq3ejP7fMEMVHcNzaM/edit?usp=sharing)
   
 - Консультация по Git.
   - [Задание](https://github.com/V-Marco/hse_iad5_2021/blob/main/misc/git_cons/git_cons.pdf)
@@ -18,3 +19,7 @@
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar2/sem02_numpy.ipynb)
   - [Видео](https://youtu.be/gOkitx_tnOg)
   - [Объяснение `np.random.seed()`](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do)
+
+- Семинар 3: Визуализация и предварительный анализ данных. 
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar3/sem03_EDA.ipynb)
+  - [Видео](https://youtu.be/OhS72gMNszw)
