@@ -23,3 +23,7 @@
 - Семинар 3: Визуализация и предварительный анализ данных. 
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar3/sem03_EDA.ipynb)
   - [Видео](https://youtu.be/OhS72gMNszw)
+  
+- Семинар 4: ООП.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar4/sem04_oop.ipynb)
+  - [Видео](https://youtu.be/wtzh3asAgso)
