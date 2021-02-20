@@ -27,3 +27,7 @@
 - Семинар 4: ООП.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar4/sem04_oop.ipynb)
   - [Видео](https://youtu.be/wtzh3asAgso)
+
+- Семинар 5: sklearn и kNN.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar5/sem05-sklearn-knn.ipynb)
+  - [Видео](https://youtu.be/cxLPW91HVBg)
