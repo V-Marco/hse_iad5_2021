@@ -32,11 +32,16 @@
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar5/sem05-sklearn-knn.ipynb)
   - [Видео](https://youtu.be/cxLPW91HVBg)
 
-- Семинар 6: Линейная регрессия
+- Семинар 6: Линейная регрессия.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar6/sem06_linreg.ipynb)
   - [Конспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar6/Sem_24_02.pdf)
   - [Видео](https://youtu.be/5IbdnDBb0WM)
   - [Функции потерь](https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0)
   - [Мультиколлинеарность](https://stats.stackexchange.com/questions/361247/multicollinearity-and-predictive-performance)
   - [Минимизация MAE](https://stats.stackexchange.com/questions/355538/why-does-minimizing-the-mae-lead-to-forecasting-the-median-and-not-the-mean)
+
+- Семинар 7: Градиентный спуск.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar7/sem07_grad.ipynb)
+  - [Видео](https://youtu.be/lAP2j62T1ZQ)
+  - [О сходимости градиентного спуска на практике](https://datascience.stackexchange.com/questions/24534/does-gradient-descent-always-converge-to-an-optimum)
  
