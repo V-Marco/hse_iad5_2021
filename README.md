@@ -9,6 +9,9 @@
   - [Задание](https://github.com/V-Marco/hse_iad5_2021/blob/main/misc/git_cons/git_cons.pdf)
   - [Видео](https://youtu.be/abGTdpA9aYo)
 
+- Консультация по Matplotlib.
+  - [Тетрадка](https://github.com/V-Marco/hse_iad5_2021/blob/main/misc/vis_cons/matplotlib_cons.ipynb)
+
 - Семинар 1: Введение в Pandas.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar1/sem1_pandas.ipynb)
   - [Видео](https://youtu.be/qPJjyeLOm7w)
