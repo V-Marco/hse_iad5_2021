@@ -47,4 +47,12 @@
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar7/sem07_grad.ipynb)
   - [Видео](https://youtu.be/lAP2j62T1ZQ)
   - [О сходимости градиентного спуска на практике](https://datascience.stackexchange.com/questions/24534/does-gradient-descent-always-converge-to-an-optimum)
- 
+
+- Семинар 8: Линейная классификация.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar8/sem08_linclass.ipynb)
+  - [Видео](https://www.youtube.com/watch?v=bVAtnbyHvD8)
+
+- Семинар 9: Логистическая регрессия и SVM.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar9/sem09_logit_svm.ipynb)
+  - [Видео](https://youtu.be/u17GTGI3AJ4)
+  - [Про ROC AUC](https://dyakonov.org/2017/07/28/auc-roc-площадь-под-кривой-ошибок/) 
