@@ -56,3 +56,10 @@
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar9/sem09_logit_svm.ipynb)
   - [Видео](https://youtu.be/u17GTGI3AJ4)
   - [Про ROC AUC](https://dyakonov.org/2017/07/28/auc-roc-площадь-под-кривой-ошибок/) 
+
+- Семинар 10: Обработка текстов.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar10/sem10_texts.ipynb)
+  - [Видео](https://youtu.be/lMttJQEgMac)
+
+- Семинар 11: Многоклассовая классификация.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar11/sem11_multiclass_calibration.ipynb)
