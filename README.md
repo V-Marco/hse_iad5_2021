@@ -63,3 +63,18 @@
 
 - Семинар 11: Многоклассовая классификация.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar11/sem11_multiclass_calibration.ipynb)
+
+- Семинар 12: Решающие деревья.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar12/sem12_trees.ipynb)
+
+- Семинар 13: Случайный лес.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar13/sem13_rf.ipynb)
+
+- Семинар 14: Бустинг, часть 1.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar14/sem14_boosting_part1.ipynb)
+
+- Семинар 15: Бустинг, часть 2.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar15/sem15_boostings_part2.ipynb)
+
+- Семинар 16: Понижение размерности. Генерация признаков.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar16/sem16_pca_features.ipynb)
