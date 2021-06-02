@@ -78,3 +78,6 @@
 
 - Семинар 16: Понижение размерности. Генерация признаков.
   - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar16/sem16_pca_features.ipynb)
+
+- Семинар 17: Кластеризация.
+  - [Кодспект](https://github.com/V-Marco/hse_iad5_2021/blob/main/seminar17/sem17_clustering.ipynb)
